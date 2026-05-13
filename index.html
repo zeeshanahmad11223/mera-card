@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Card</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#c7cf00;
+    }
+
+    .card{
+      width:320px;
+      background:#000;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.4);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:scale(1.03);
+    }
+
+    .card img{
+      width:100%;
+      height:380px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .username{
+      background:#ffee00;
+      padding:18px;
+      text-align:center;
+      font-size:38px;
+      font-weight:bold;
+      color:#2d2dbb;
+    }
+
+    .creator{
+      background:#000;
+      color:white;
+      text-align:center;
+      padding:10px;
+      font-size:16px;
+      letter-spacing:1px;
+    }
+
+    .creator span{
+      color:#ffee00;
+      font-weight:bold;
+    }
+
+    @media(max-width:400px){
+      .card{
+        width:90%;
+      }
+
+      .username{
+        font-size:28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="mahi.jpg" alt="Profile Image">
+
+    <div class="username">
+      @mahi7781
+    </div>
+
+    <div class="creator">
+      Created By <span>Zeeshan</span>
+    </div>
+  </div>
+
+</body>
+</html>
